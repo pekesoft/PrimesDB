@@ -35,7 +35,7 @@ bool función esPrimo (NúmeroComprobación)
     ÚltimoDígito = NúmeroComprobacion MODULO 10
 
     // Comprobamos si es par o múltiplo de 5. Esto se puede hacer de muchas maneras, pero en resumen:
-    Si ÚltimoNúmero == (0, 2, 4, 5, 6, 8)
+    Si ÚltimoDígito == (0, 2, 4, 5, 6, 8)
         Devuelve 0  // No es primo
 
 ~~~
