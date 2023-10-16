@@ -53,12 +53,27 @@ Así por ejemplo, el primer byte de la base de datos contiene la comprobación c
 | 29 | 27 | 23 | 21 | 19 | 17 | 13 | 11 |
 | **1** | **0** | **1** | **0** | **1** | **1** | **1** | **1** |
 
+**Hex:** 0x9F
+
 El siguiente byte ya representará las décadas 30 y 40:
 
 | Bit 7 | Bit 6 | Bit 5 | Bit 4 | Bit 3 | Bit 2 | Bit 1 | Bit 0 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 49 | 47 | 43 | 41 | 39 | 37 | 33 | 31 |
 | **0** | **1** | **1** | **1** | **0** | **1** | **0** | **1** |
+
+**Hex:** 0x75
+
+El tercer byte contendría las décadas 50 y 60, y así sucesivamente:
+
+| Bit 7 | Bit 6 | Bit 5 | Bit 4 | Bit 3 | Bit 2 | Bit 1 | Bit 0 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 69 | 67 | 63 | 61 | 59 | 57 | 53 | 51 |
+| **0** | **1** | **0** | **1** | **1** | **0** | **1** | **0** |
+
+**Hex:** 0x59
+
+Con esto se puede observar el poder de compresión de la información de este algoritmo específico para primos. En 3 bytes ya hemos almacenado el cómputo de 60 números.
 
 ## Cálculo de la dirección
 
