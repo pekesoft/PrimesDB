@@ -70,7 +70,7 @@ Ya que podemos representar 2 décadas por byte, el número resultante lo dividir
 
 Si ponemos el ejemplo del número 11 (el primer primo almacenado), al truncarlo después de dividirlo la década quedaría en 1, y al dividirlo por 2 quedaría como 0.5, por lo que debemos hacer 2 cosas.
 
-Primero corregir el offset sumándole 0.5, por lo que la dirección en un principio queda como la posición 1 (lo cual es correcto desde el punto de vista humano), pero como tanto electrónica o computacionalmente empezamos desde 0, por lo que le restamos 1 al resultado.
+Primero corregir el offset sumándole 0.5, por lo que la dirección en un principio queda como la posición 1 (lo cual es correcto desde el punto de vista humano), pero como tanto electrónica como computacionalmente empezamos desde la posición 0 debemos restarle 1 al resultado.
 
 Pero si ponemos el ejemplo del número 21, Dirección => int(21/10)/2 = 1 + 0.5 = 1.5, o el ejemplo del 41 => 2.5
 
