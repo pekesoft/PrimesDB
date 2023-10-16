@@ -25,6 +25,8 @@ Pseudocódigo:
 
 ~~~
 
+bool función esPrimo (NúmeroComprobación)
+
     // Primero comprobamos los primeros primos
     Si NúmeroComprobación == (2, 3, 5, 7)
         Devuelve 1  // Es primo
@@ -57,3 +59,55 @@ El siguiente byte ya representará las décadas 30 y 40:
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 49 | 47 | 43 | 41 | 39 | 37 | 33 | 31 |
 | **0** | **1** | **1** | **1** | **0** | **1** | **0** | **1** |
+
+## Cálculo de la dirección
+
+La dirección como vemos, está directamente relacionada con el número que queremos representar o comprobar. Lo primero que debemos hacer es eliminar el dígito de las unidades (el que usamos para la comprobación inicial) truncándolo. Es decir, dividiendo por 10 e ignorando los decimales sin hacer una corrección ni al alza ni a la baja.
+
+Ya que podemos representar 2 décadas por byte, el número resultante lo dividiremos entre 2.
+
+Si ponemos el ejemplo del número 11 (el primer primo almacenado), al truncarlo quedaría en 1 y al dividirlo por 2 quedaría como 0,5, por lo que debemos hacer 2 cosas. Primero corregir el offset sumándole 0.5, por lo que la dirección en un principio queda como la posición 1, pero como tanto electrónica o computacionalmente empezamos desde 0, o bien le restamos 1 al resultado o bien en vez de sumar el offset se lo restamos, por lo que la dirección en este caso será 0.
+
+En el caso del 31, Dirección => int(31/10)/2 = 1.5 - 0.5 = 1
+
+Pero si ponemos el ejemplo del número 21, Dirección => int(21/10)/2 = 1 - 0.5 = 0.5, o el caso del 41 => 1.5
+
+Debemos hacer una segunda corrección que además nos marcará el nibble en el que se encuentra almacenado (recuerda, las décadas impares en el menos significativo y las pares en el más significativo).
+
+Representamos en pseudocódigo la generación de la dirección:
+
+~~~
+
+    // Primero eliminamos las unidades, dividiendo entre 10 y truncando los decimales
+    Década = int (NúmeroComprobación / 10)
+
+    // Hacemos el cálculo de la dirección dividiendo entre 2, sumándole el offset,
+    // truncando los decimales y restándole 1
+    Dirección = int (Década / 2 + 0.5) - 1
+
+~~~
+
+## Cálculo del bit de posicionamiento
+
+Por último, para acceder a cada bit según el número a comprobar, nos basamos en una tabla de sustitución que dará la posición del bit dentro del nibble y haremos un último ajuste, en este caso un offset a nivel de bit para seleccionar la década.
+
+~~~
+
+    Bits = { 1, 3, 7, 9}
+
+    Recorrer Bits
+        Si Bits[x] == ÚltimoDígito
+            Salir del Bucle
+
+    Si Década MODULO 2 == 0
+        x = x + 5
+
+~~~
+
+Con esto ya tenemos completada tanto la dirección del byte como la posición del bit:
+
+~~~
+
+    Devolver FicheroBaseDatos(Dirección)[x]
+
+~~~~
