@@ -93,16 +93,20 @@ Representamos en pseudocódigo la generación de la dirección:
 
 Por último, para acceder a cada bit según el número a comprobar, nos basamos en una tabla de sustitución que dará la posición del bit dentro del nibble y haremos un último ajuste, en este caso un offset a nivel de bit para seleccionar la década.
 
+Pseudocódigo:
+
 ~~~
 
     Bits = { 1, 3, 7, 9}
 
+    //Localizamos la posición dentro del nibble
     Recorrer Bits
         Si Bits[x] == ÚltimoDígito
             Salir del Bucle
 
+    //Si la década es par estamos en el 2º nibble, por lo que lo desplazamos 4 bits
     Si Década MODULO 2 == 0
-        x = x + 5
+        x = x + 4
 
 ~~~
 
