@@ -97,7 +97,7 @@ Pseudocódigo:
 
 ~~~
 
-    Bits = { 1, 3, 7, 9}
+    Bits = {1, 3, 7, 9}
 
     //Localizamos la posición dentro del nibble
     Recorrer Bits
