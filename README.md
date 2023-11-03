@@ -132,3 +132,9 @@ Con esto ya tenemos completada tanto la dirección del byte como la posición de
     Devolver FicheroBaseDatos(Dirección)[x]
 
 ~~~~
+
+## Más Información
+
+- [Capas de Abstracción](ABSTRACT.md)
+- [Mapa de ficheros](FILES.md)
+- [Acerca De](ABOUT.md)

@@ -30,7 +30,7 @@ def esPrimoBaseDatos(numero_comprobacion, base_datos):
     bit_valor = (byte >> posicion_bit) & 1
     return bit_valor == 1
 
-with open('0000.pdb', 'rb') as file:
+with open('../../PrimesDB/0000.pdb', 'rb') as file:
     base_datos = file.read()
 
 while True:
