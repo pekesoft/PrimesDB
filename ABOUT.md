@@ -24,7 +24,7 @@ El desarrollo del primer bloque de base de datos (primeros 64Mb), así como las 
 Las siguientes personas han participado asesorando, analizando o testeando toda la base desde el principio:
 
 - Jesús Azagra Madejón
-- Agustín Gimenez Bernad - [@gusmanb](https://twitter.com/gusmanb)
+- Agustín Gimenez Bernad - [@gusmanb](https://twitter.com/gusmanb) | [GitHub](https://github.com/gusmanb)
 - Alexandre Dumont - [@adumont](https://twitter.com/adumont)
 - Valero Ángel Serrano Mercadal - [@valeroASM](https://twitter.com/ValeroASM)
 
