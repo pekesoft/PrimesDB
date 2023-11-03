@@ -8,4 +8,27 @@ Este algoritmo y todo lo que contiene este repositorio están licenciados bajo G
 
 ## Diseño
 
-El diseño de la base de datos y el análisis e investigación del algoritmo, así como toda la documentación y la dirección del proyecto corren a cuenta de Jesús Rodríguez Conde - @MrChuxMan en twitter/X
+El diseño de la base de datos y el análisis e investigación del algoritmo, así como toda la documentación y la dirección del proyecto corren a cuenta de: 
+
+- Jesús Rodríguez Conde - [@MrChuxMan](https://twitter.com/MrChuxMan)
+- Peke Soft, Ltd. - [@pekesoft](https://twitter.com/pekesoft)
+
+## Desarrollo
+
+El desarrollo del primer bloque de base de datos (primeros 64Mb), así como las primeras implementaciones en python de este algoritmo o la extracción de metadatos han sido obra de: 
+
+- Jesús Pacheco - [@as_informatico](https://twitter.com/as_informatico)
+
+## Consultores y testeo
+
+Las siguientes personas han participado asesorando, analizando o testeando toda la base desde el principio:
+
+- Jesús Azagra Madejón
+- Agustín Gimenez Bernad - [@gusmanb](https://twitter.com/gusmanb)
+- Alexandre Dumont - [@adumont](https://twitter.com/adumont)
+- Valero Ángel Serrano Mercadal - [@valeroASM](https://twitter.com/ValeroASM)
+
+### Gracias especiales a
+
+- Juan González Gómez - [@obijuan_cube](https://twitter.com/Obijuan_cube) por su eterna inspiración y por echarle un vistazo al proyecto. Seguro que algo se le ocurre con esto y una FPGA o un RiscV.
+- Mates Mike - [@mike_mates](https://twitter.com/mike_mates) por su trabajo y valor divulgativo que me pica a hacer estos sudokus, y por echarle un vistazo a los esbozos de esta cosa.
