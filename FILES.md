@@ -1,38 +1,48 @@
 # Estructura de ficheros y carpetas
 [Inicio](README.md) | [Capas de Abstracción](ABSTRACT.md) | [Ficheros](FILES.md) | [Acerca De](ABOUT.md)
 
-## [README.md](README.md)
+## Documentación
 
-Documentación del algoritmo de generación y de acceso a la base de datos.
+Los documentos que describen las distintas partes de los algoritmos, estructuras y ficheros que forman parte de la base de datos son los siguientes:
 
-## [ABSTRACT.md](ABSTRACT.md)
+### [README.md](README.md)
 
-Documentación de los ficheros de las capas de abstracción para bases de datos de primos muy grandes.
+    Documentación del algoritmo de generación y de acceso a la base de datos.
 
-## FILES.md (este fichero)
+### [ABSTRACT.md](ABSTRACT.md)
 
-Mapa y documentación de los distintos archivos y rutas de este repositorio.
+    Documentación de los ficheros de las capas de abstracción para bases de datos de primos muy grandes.
 
-## [ABOUT.md](ABOUT.md)
+### FILES.md (este fichero)
 
-Créditos de análisis, diseño, desarrollo y computación de los cálculos de los primos.
+    Mapa y documentación de los distintos archivos y rutas de este repositorio.
 
-## PrimesDB
+### [ABOUT.md](ABOUT.md)
+
+    Créditos de análisis, diseño, desarrollo y computación de los cálculos de los primos.
+
+## Carpetas
+
+### Computed
+
+Base de datos en formato texto que contiene los 100 primeros millones de números primos para poder cotejar los primeros bloques generados en nuestro formato.
+
+### PrimesDB
 
 Es la carpeta que contiene los ficheros de la base de datos propiamente dicha en bloques de 64Mb ***(64x1024x1024=67.108.864 bytes)***. Los ficheros tienen extensión pdb (primesDB) y el nombre es un número secuencial de bloque para poder concatenar varios bloques. El nombre del fichero forma parte del cálculo de la dirección del número para ***números superiores a 1.342.177.280***, que es el límite de números por cada 64Mb y del primer bloque.
 
-## Samples
+### Samples
 
 Carpeta con ejemplos del algoritmo implementado en distintos lenguajes de programación.
 
-### Python
+#### Python
 
 Los ejemplos de python han sido desarrollados por Jesús Pacheco - [@as_informatico](https://twitter.com/as_informatico) y forman parte del primer prototipo de la base de datos.
 
-#### compileDB.py
+##### compileDB.py
 
     Programa que calcula los primos del primer bloque y genera el fichero de la base de datos.
 
-#### checkPrime.py
+##### checkPrime.py
 
     Programa para comprobar cualquier número dentro de la base de datos.
