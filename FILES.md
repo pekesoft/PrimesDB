@@ -18,7 +18,7 @@ Créditos de análisis, diseño, desarrollo y computación de los cálculos de l
 
 ## PrimesDB
 
-Es la carpeta que contiene los ficheros de la base de datos propiamente dicha en bloques de 64Mb (64x1024x1024=67.108.864 bytes). Los ficheros tienen extensión pdb (primesDB) y el nombre es un número secuencial de bloque para poder concatenar varios bloques. El nombre del fichero forma parte del cálculo de la dirección del número para números superiores a 1.342.177.280, que es el límite de números por cada 64Mb y del primer bloque.
+    Es la carpeta que contiene los ficheros de la base de datos propiamente dicha en bloques de 64Mb (64x1024x1024=67.108.864 bytes). Los ficheros tienen extensión pdb (primesDB) y el nombre es un número secuencial de bloque para poder concatenar varios bloques. El nombre del fichero forma parte del cálculo de la dirección del número para números superiores a 1.342.177.280, que es el límite de números por cada 64Mb y del primer bloque.
 
 ## Samples
 
