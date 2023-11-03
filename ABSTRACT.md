@@ -1,3 +1,12 @@
+# Capas de Abstracción
+[Inicio](README.md) | [Capas de Abstracción](ABSTRACT.md) | [Ficheros](FILES.md) | [Acerca De](ABOUT.md)
+
+## Introducción
+
+## Búsquedas y bases de datos heurísticas
+
+## Bloques por capa de abstracción
+
 |Nivel|Tamaño de bloque|Tipo de datos|Números/byte|Números/bit|
 |:--:|:--:|:--:|:--:|:--:|
 |0|64Mb|Absolutos|20|1|
@@ -14,3 +23,5 @@
 |n|Tamaño[n-1] / 8|Relativos|Num/Byte[n-1] * 8|Num/Byte[n-1]|
 
 Nivel de cambio de capa de abstracción: cuando 8 bits (de la siguiente capa de abstracción) sean 0.
+
+## Posibilidad de mejora
