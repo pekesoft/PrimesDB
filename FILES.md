@@ -1,5 +1,5 @@
 # Estructura de ficheros y carpetas
-[Inicio](README.md) | [Capas de Abstracción](ABSTRACT.md) | [Ficheros](FILES.md) | [Acerca De](ABOUT.md)
+[Inicio](README.md) | [Metadatos](METADATA.md) | [Capas de Abstracción](ABSTRACT.md) | [Ficheros](FILES.md) | [Acerca De](ABOUT.md)
 
 ## Documentación
 
