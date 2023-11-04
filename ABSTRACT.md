@@ -46,20 +46,20 @@ Y así sucesivamente. A medida que vamos escalando en las capas de abstracción 
 
 ## Bloques por capa de abstracción
 
-|Nivel|Tamaño de bloque|Tipo de datos|Números/byte|Números/bit|
-|:--:|:--:|:--:|:--:|:--:|
-|0|64Mb|Absolutos|20|1|
-|1|8Mb|Relativos|160|20|
-|2|1Mb|Relativos|1.280|160|
-|3|128Kb|Relativos|10.240|1.280|
-|4|16Kb|Relativos|81.920|10.240|
-|5|2Kb|Relativos|655.360|81.920|
-|6|256b|Relativos|5.242.880|655.360|
-|7|32b|Relativos|41.943.040|5.242.880|
-|8|4b|Relativos|335.544.320|41.943.040|
-|9|-|Relativos|2.684.354.560|335.544.320|
-|10|-|Relativos|21.474.836.484|2.684.354.560|
-|n|Tamaño[n-1] / 8|Relativos|Num/Byte[n-1] * 8|Num/Byte[n-1]|
+|Nivel|Tamaño de bloque|Tipo de datos|Números/byte|Números/bit|Ratio de compresión|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|0|64Mb|Absolutos|20|1|N/A|
+|1|8Mb|Relativos|160|20|1:8|
+|2|1Mb|Relativos|1.280|160|1:64|
+|3|128Kb|Relativos|10.240|1.280|1:512|
+|4|16Kb|Relativos|81.920|10.240|1:4.096|
+|5|2Kb|Relativos|655.360|81.920|1:32.768|
+|6|256b|Relativos|5.242.880|655.360|1:262.144|
+|7|32b|Relativos|41.943.040|5.242.880|1:2.097.152|
+|8|4b|Relativos|335.544.320|41.943.040|1:16.777.216|
+|9|-|Relativos|2.684.354.560|335.544.320|1:134.217.728|
+|10|-|Relativos|21.474.836.484|2.684.354.560|1:1.073.741.824|
+|n|Tamaño[n-1] / 8|Relativos|Num/Byte[n-1] * 8|Num/Byte[n-1]|Ratio[n-1] * 8|
 
 ## Niveles superiores
 
